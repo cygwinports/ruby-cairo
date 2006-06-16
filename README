@@ -1,0 +1,66 @@
+rcairo
+------------------------------------------
+Ruby bindings for the cairo graphics engine.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  libcairo2-1.0.2-1
+  ruby-1.8.4-1
+
+Build requirements:
+  cygwin-1.5.19-4
+  binutils-20050610-1
+  cygport-0.1.5-1
+  gcc-core-3.4.4-1
+  make-3.80-1
+  ruby-1.8.4-1
+  cairo-1.0.2-1
+
+Canonical website:
+  http://cairographics.org/
+
+Canonical download:
+  http://cairographics.org/releases/
+
+-------------------------------------------
+
+Build instructions:
+  unpack rcairo-1.0.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  ./rcairo-1.0.0-X.sh all
+
+This will create:
+  /usr/src/rcairo-1.0.0-X-src.tar.bz2
+  /usr/src/rcairo-1.0.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/ruby/site_ruby/1.8/cairo.rb
+  /usr/lib/ruby/site_ruby/1.8/i386-cygwin/cairo.so
+  /usr/lib/ruby/site_ruby/1.8/i386-cygwin/libruby-cairo.a
+  /usr/lib/ruby/site_ruby/1.8/i386-cygwin/rb_cairo.h
+  /usr/share/doc/Cygwin/rcairo-1.0.0.README
+  /usr/share/doc/rcairo-1.0.0/AUTHORS
+  /usr/share/doc/rcairo-1.0.0/COPYING
+  /usr/share/doc/rcairo-1.0.0/ChangeLog
+  /usr/share/doc/rcairo-1.0.0/GPL
+  /usr/share/doc/rcairo-1.0.0/NEWS
+  /usr/share/doc/rcairo-1.0.0/README
+
+------------------
+
+Port Notes:
+
+----- version 1.0.0-2 -----
+Include link library in binary package for ruby-gnome2 cairo support.
+
+----- version 1.0.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
