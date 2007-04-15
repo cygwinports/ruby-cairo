@@ -3,19 +3,19 @@ ruby-cairo
 Ruby bindings for the cairo graphics engine.
 
 Runtime requirements:
-  cygwin-1.5.21-2
-  libcairo2-1.2.4-1
-  ruby-1.8.4-1
+  cygwin-1.5.24-2
+  libcairo2-1.4.4-1
+  ruby-1.8.5-2
 
 Build requirements:
-  cygwin-1.5.21-2
+  cygwin-1.5.24-2
   binutils-20060817-1
-  cygport-0.2.6-1
-  gcc-core-3.4.4-1
+  cygport-0.2.11-1
+  gcc-core-3.4.4-3
   make-3.81-1
-  pkg-config-0.20-1
-  ruby-1.8.4-1
-  libcairo-devel-1.2.4-1
+  pkg-config-0.21-1
+  ruby-1.8.5-2
+  libcairo-devel-1.4.4-1
 
 Canonical website:
   http://cairographics.org/
@@ -26,35 +26,101 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ruby-cairo-1.2.0-X-src.tar.bz2
+  unpack ruby-cairo-1.4.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ruby-cairo-1.2.0-X.cygport all
+  cygport ./ruby-cairo-1.4.1-X.cygport all
 
 This will create:
-  /usr/src/ruby-cairo-1.2.0-X-src.tar.bz2
-  /usr/src/ruby-cairo-1.2.0-X.tar.bz2
+  /usr/src/ruby-cairo-1.4.1-X-src.tar.bz2
+  /usr/src/ruby-cairo-1.4.1-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/lib/ruby/site_ruby/1.8/cairo.rb
+  /usr/lib/ruby/site_ruby/1.8/cairo/context.rb
+  /usr/lib/ruby/site_ruby/1.8/cairo/context/circle.rb
+  /usr/lib/ruby/site_ruby/1.8/cairo/context/path.rb
+  /usr/lib/ruby/site_ruby/1.8/cairo/context/quad.rb
+  /usr/lib/ruby/site_ruby/1.8/cairo/context/rectangle.rb
   /usr/lib/ruby/site_ruby/1.8/i386-cygwin/cairo.so
   /usr/lib/ruby/site_ruby/1.8/i386-cygwin/libruby-cairo.a
   /usr/lib/ruby/site_ruby/1.8/i386-cygwin/rb_cairo.h
-  /usr/share/doc/Cygwin/ruby-cairo-1.2.0.README
-  /usr/share/doc/ruby-cairo-1.2.0/AUTHORS
-  /usr/share/doc/ruby-cairo-1.2.0/COPYING
-  /usr/share/doc/ruby-cairo-1.2.0/ChangeLog
-  /usr/share/doc/ruby-cairo-1.2.0/GPL
-  /usr/share/doc/ruby-cairo-1.2.0/NEWS
-  /usr/share/doc/ruby-cairo-1.2.0/README
+  /usr/share/doc/Cygwin/ruby-cairo-1.4.1.README
+  /usr/share/doc/ruby-cairo-1.4.1/AUTHORS
+  /usr/share/doc/ruby-cairo-1.4.1/COPYING
+  /usr/share/doc/ruby-cairo-1.4.1/ChangeLog
+  /usr/share/doc/ruby-cairo-1.4.1/GPL
+  /usr/share/doc/ruby-cairo-1.4.1/NEWS
+  /usr/share/doc/ruby-cairo-1.4.1/README
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo.src/M000001.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo.src/M000002.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/Context.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/Context/Circle.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/Context/Circle.src/M000009.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/Context/Path.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/Context/Path.src/M000006.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/Context/Path.src/M000007.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/Context/Path/Point.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/Context/Path/Point.src/M000008.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/Context/Quad.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/Context/Quad.src/M000003.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/Context/Quad.src/M000004.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/Context/Rectangle.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/Context/Rectangle.src/M000005.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/Matrix.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/Matrix.src/M000010.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/Matrix.src/M000011.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/Matrix.src/M000012.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/Matrix.src/M000013.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/Matrix.src/M000014.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/Matrix.src/M000015.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/Matrix.src/M000016.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/SVGSurface.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/SVGSurface.src/M000020.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/Surface.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/Surface.src/M000018.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/Cairo/Surface.src/M000019.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/rb_cCairo_GradientPattern.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/classes/rb_cCairo_Pattern.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/created.rid
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/files/src/lib/cairo/context/circle_rb.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/files/src/lib/cairo/context/path_rb.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/files/src/lib/cairo/context/quad_rb.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/files/src/lib/cairo/context/rectangle_rb.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/files/src/lib/cairo/context_rb.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/files/src/lib/cairo_rb.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/files/src/rb_cairo_c.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/files/src/rb_cairo_constants_c.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/files/src/rb_cairo_context_c.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/files/src/rb_cairo_exception_c.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/files/src/rb_cairo_font_extents_c.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/files/src/rb_cairo_font_face_c.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/files/src/rb_cairo_font_options_c.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/files/src/rb_cairo_glyph_c.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/files/src/rb_cairo_matrix_c.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/files/src/rb_cairo_path_c.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/files/src/rb_cairo_pattern_c.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/files/src/rb_cairo_private_c.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/files/src/rb_cairo_scaled_font_c.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/files/src/rb_cairo_surface_c.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/files/src/rb_cairo_text_extents_c.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/fr_class_index.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/fr_file_index.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/fr_method_index.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/index.html
+  /usr/share/doc/ruby-cairo-1.4.1/rdoc/rdoc-style.css
 
 ------------------
 
 Port Notes:
+
+----- version 1.4.1-1 -----
+Version bump for cairo-1.4.  Included rdoc.
 
 ----- version 1.2.0-1 -----
 Version bump.  Changed package name from rcairo for consistency with 
