@@ -1,0 +1,9 @@
+ORIG_PN=rcairo
+
+inherit ruby-gnome2
+
+DESCRIPTION="Ruby bindings for the cairo graphics rendering library"
+HOMEPAGE="http://cairographics.org/${ORIG_PN}"
+SRC_URI="http://cairographics.org/releases/${ORIG_PN}-${PV}.tar.gz"
+
+export PKG_CONFIG=/usr/bin/pkg-config
