@@ -4,13 +4,13 @@ Ruby bindings for the cairo graphics engine.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  libcairo2-1.6.4-1
-  ruby-1.8.7_p22-1
+  libcairo2-1.8.2-1
+  ruby-1.8.7_p22-2
 
 Build requirements:
 (besides corresponding devel packages)
-  binutils-20080523-2
-  cygport-0.3.13-1
+  binutils-20080624-2
+  cygport-0.4.3-1
   gcc-core-3.4.4-3
   make-3.81-1
   pkg-config-0.23a-2
@@ -24,15 +24,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ruby-cairo-1.6.3-X-src.tar.bz2
+  unpack ruby-cairo-1.8.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ruby-cairo-1.6.3-X.cygport all
+  cygport ./ruby-cairo-1.8.0-X.cygport all
 
 This will create:
-  /usr/src/ruby-cairo-1.6.3-X-src.tar.bz2
-  /usr/src/ruby-cairo-1.6.3-X.tar.bz2
+  /usr/src/ruby-cairo-1.8.0-X-src.tar.bz2
+  /usr/src/ruby-cairo-1.8.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -56,16 +56,115 @@ Files included in the binary package:
   /usr/lib/ruby/site_ruby/1.8/i386-cygwin/cairo.so
   /usr/lib/ruby/site_ruby/1.8/i386-cygwin/libruby-cairo.a
   /usr/lib/ruby/site_ruby/1.8/i386-cygwin/rb_cairo.h
-  /usr/share/doc/ruby-cairo-1.6.3/AUTHORS
-  /usr/share/doc/ruby-cairo-1.6.3/COPYING
-  /usr/share/doc/ruby-cairo-1.6.3/ChangeLog
-  /usr/share/doc/ruby-cairo-1.6.3/GPL
-  /usr/share/doc/ruby-cairo-1.6.3/NEWS
-  /usr/share/doc/ruby-cairo-1.6.3/README
+  /usr/share/doc/ruby-cairo-1.8.0/AUTHORS
+  /usr/share/doc/ruby-cairo-1.8.0/COPYING
+  /usr/share/doc/ruby-cairo-1.8.0/ChangeLog
+  /usr/share/doc/ruby-cairo-1.8.0/GPL
+  /usr/share/doc/ruby-cairo-1.8.0/NEWS
+  /usr/share/doc/ruby-cairo-1.8.0/README
+  /usr/share/ri/1.8/site/Cairo/Color/Base/cdesc-Base.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/Base/new-c.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/CMYK/cdesc-CMYK.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/CMYK/new-c.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/CMYK/to_a-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/CMYK/to_ary-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/CMYK/to_cmyk-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/CMYK/to_hsv-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/CMYK/to_rgb-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/HSV/cdesc-HSV.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/HSV/new-c.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/HSV/to_a-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/HSV/to_ary-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/HSV/to_cmyk-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/HSV/to_hsv-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/HSV/to_rgb-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/RGB/cdesc-RGB.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/RGB/new-c.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/RGB/to_a-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/RGB/to_ary-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/RGB/to_cmyk-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/RGB/to_hsv-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/RGB/to_rgb-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/RGB/to_s-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/X11/cdesc-X11.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/cdesc-Color.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/parse-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Color/parse_hex_color-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Context/Blur/cdesc-Blur.yaml
+  /usr/share/ri/1.8/site/Cairo/Context/Blur/pseudo_blur-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Context/Circle/cdesc-Circle.yaml
+  /usr/share/ri/1.8/site/Cairo/Context/Circle/circle-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Context/Color/cdesc-Color.yaml
+  /usr/share/ri/1.8/site/Cairo/Context/Color/set_source_color-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Context/Path/cdesc-Path.yaml
+  /usr/share/ri/1.8/site/Cairo/Context/Path/map_path_onto-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Context/Path/transform_path-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Context/Rectangle/cdesc-Rectangle.yaml
+  /usr/share/ri/1.8/site/Cairo/Context/Rectangle/rounded_rectangle-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Context/Triangle/cdesc-Triangle.yaml
+  /usr/share/ri/1.8/site/Cairo/Context/Triangle/triangle-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Context/cdesc-Context.yaml
+  /usr/share/ri/1.8/site/Cairo/Context/clip_preserve-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Context/fill_preserve-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Context/stroke_preserve-i.yaml
+  /usr/share/ri/1.8/site/Cairo/FontOptions/cdesc-FontOptions.yaml
+  /usr/share/ri/1.8/site/Cairo/FontOptions/merge-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Matrix/%2a-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Matrix/cdesc-Matrix.yaml
+  /usr/share/ri/1.8/site/Cairo/Matrix/clone-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Matrix/dup-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Matrix/invert-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Matrix/multiply-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Matrix/rotate-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Matrix/scale-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Matrix/translate-i.yaml
+  /usr/share/ri/1.8/site/Cairo/PSLevel/cdesc-PSLevel.yaml
+  /usr/share/ri/1.8/site/Cairo/PSLevel/names-c.yaml
+  /usr/share/ri/1.8/site/Cairo/Paper/%3d%3d-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Paper/ParseError/cdesc-ParseError.yaml
+  /usr/share/ri/1.8/site/Cairo/Paper/UnknownPaperName/cdesc-UnknownPaperName.yaml
+  /usr/share/ri/1.8/site/Cairo/Paper/UnknownPaperName/new-c.yaml
+  /usr/share/ri/1.8/site/Cairo/Paper/UnknownUnit/cdesc-UnknownUnit.yaml
+  /usr/share/ri/1.8/site/Cairo/Paper/UnknownUnit/new-c.yaml
+  /usr/share/ri/1.8/site/Cairo/Paper/UnrecognizedPaperDescription/cdesc-UnrecognizedPaperDescription.yaml
+  /usr/share/ri/1.8/site/Cairo/Paper/UnrecognizedPaperDescription/new-c.yaml
+  /usr/share/ri/1.8/site/Cairo/Paper/cdesc-Paper.yaml
+  /usr/share/ri/1.8/site/Cairo/Paper/default_unit%3d-c.yaml
+  /usr/share/ri/1.8/site/Cairo/Paper/default_unit-c.yaml
+  /usr/share/ri/1.8/site/Cairo/Paper/height-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Paper/new-c.yaml
+  /usr/share/ri/1.8/site/Cairo/Paper/parse-c.yaml
+  /usr/share/ri/1.8/site/Cairo/Paper/register_unit_resolver-c.yaml
+  /usr/share/ri/1.8/site/Cairo/Paper/resolve_unit-c.yaml
+  /usr/share/ri/1.8/site/Cairo/Paper/size-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Paper/to_s-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Paper/unit%3d-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Paper/width-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Path/cdesc-Path.yaml
+  /usr/share/ri/1.8/site/Cairo/Path/close-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Point/cdesc-Point.yaml
+  /usr/share/ri/1.8/site/Cairo/Point/distance-i.yaml
+  /usr/share/ri/1.8/site/Cairo/SVGSurface/cdesc-SVGSurface.yaml
+  /usr/share/ri/1.8/site/Cairo/SVGSurface/version_to_string-c.yaml
+  /usr/share/ri/1.8/site/Cairo/SVGSurface/versions-c.yaml
+  /usr/share/ri/1.8/site/Cairo/SVGSurface/versions_as_string-c.yaml
+  /usr/share/ri/1.8/site/Cairo/SVGVersion/cdesc-SVGVersion.yaml
+  /usr/share/ri/1.8/site/Cairo/SVGVersion/names-c.yaml
+  /usr/share/ri/1.8/site/Cairo/Surface/cdesc-Surface.yaml
+  /usr/share/ri/1.8/site/Cairo/Surface/clone-i.yaml
+  /usr/share/ri/1.8/site/Cairo/Surface/dup-i.yaml
+  /usr/share/ri/1.8/site/Cairo/__add_one_arg_setter-c.yaml
+  /usr/share/ri/1.8/site/Cairo/bindings_version-c.yaml
+  /usr/share/ri/1.8/site/Cairo/cdesc-Cairo.yaml
+  /usr/share/ri/1.8/site/Cairo/exit_application-c.yaml
+  /usr/share/ri/1.8/site/Cairo/normalize_const_name-c.yaml
 
 ------------------
 
 Port Notes:
+
+----- version 1.8.0-1 -----
+Version bump for cairo-1.8.
 
 ----- version 1.6.3-1 -----
 Version bump.
