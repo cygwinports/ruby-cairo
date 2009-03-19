@@ -3,16 +3,17 @@ ruby-cairo
 Ruby bindings for the cairo graphics engine.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libcairo2-1.8.2-1
-  ruby-1.8.7_p22-2
+  cygwin-1.7.0-43
+  libcairo2-1.8.6-10
+  libgcc1-4.3.2-2
+  ruby-1.8.7_p22-10
 
 Build requirements:
 (besides corresponding devel packages)
   binutils-20080624-2
-  cygport-0.4.3-1
-  gcc-core-3.4.4-3
-  make-3.81-1
+  cygport-0.9.6-1
+  gcc4-core-4.3.2-2
+  make-3.81-2
   pkg-config-0.23a-2
 
 Canonical website:
@@ -56,12 +57,12 @@ Files included in the binary package:
   /usr/lib/ruby/site_ruby/1.8/i386-cygwin/cairo.so
   /usr/lib/ruby/site_ruby/1.8/i386-cygwin/libruby-cairo.a
   /usr/lib/ruby/site_ruby/1.8/i386-cygwin/rb_cairo.h
-  /usr/share/doc/ruby-cairo-1.8.0/AUTHORS
-  /usr/share/doc/ruby-cairo-1.8.0/COPYING
-  /usr/share/doc/ruby-cairo-1.8.0/ChangeLog
-  /usr/share/doc/ruby-cairo-1.8.0/GPL
-  /usr/share/doc/ruby-cairo-1.8.0/NEWS
-  /usr/share/doc/ruby-cairo-1.8.0/README
+  /usr/share/doc/ruby-cairo/AUTHORS
+  /usr/share/doc/ruby-cairo/COPYING
+  /usr/share/doc/ruby-cairo/ChangeLog
+  /usr/share/doc/ruby-cairo/GPL
+  /usr/share/doc/ruby-cairo/NEWS
+  /usr/share/doc/ruby-cairo/README
   /usr/share/ri/1.8/site/Cairo/Color/Base/cdesc-Base.yaml
   /usr/share/ri/1.8/site/Cairo/Color/Base/new-c.yaml
   /usr/share/ri/1.8/site/Cairo/Color/CMYK/cdesc-CMYK.yaml
@@ -163,27 +164,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 1.8.0-1 -----
-Version bump for cairo-1.8.
-
------ version 1.6.3-1 -----
-Version bump.
-
------ version 1.6.1-1 -----
-Version bump for cairo-1.6.
-
------ version 1.4.1-1 -----
-Version bump for cairo-1.4.  Included rdoc.
-
------ version 1.2.0-1 -----
-Version bump.  Changed package name from rcairo for consistency with 
-the ruby-gnome2 packages.
-
------ version 1.0.0-2 -----
-Include link library in binary package for ruby-gnome2 cairo support.
-
------ version 1.0.0-1 -----
-Initial release for Cygwin.
+----- version 1.8.0-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

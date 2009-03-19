@@ -7,6 +7,4 @@ HOMEPAGE="http://cairographics.org/${ORIG_PN}"
 SRC_URI="http://cairographics.org/releases/${ORIG_PN}-${PV}.tar.gz"
 PATCH_URI="1.6.3-not-win32.patch"
 
-#export PKG_CONFIG=/usr/bin/pkg-config
-
 RDOC_MODULE="Cairo"
