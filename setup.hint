@@ -1,5 +1,5 @@
 category: Ruby
-requires: cygwin libcairo2 ruby
+requires: libcairo2 ruby
 sdesc: "Ruby bindings for cairo"
 ldesc: "Ruby bindings for the cairo graphics engine"
 
