@@ -1,5 +1,0 @@
-category: Ruby
-requires: libcairo2 ruby
-sdesc: "Ruby bindings for cairo"
-ldesc: "Ruby bindings for the cairo graphics engine"
-
