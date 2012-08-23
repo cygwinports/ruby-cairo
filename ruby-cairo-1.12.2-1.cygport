@@ -1,14 +1,7 @@
-ORIG_PN=rcairo
+inherit rubygem
 
-inherit ruby-gnome2
-
-CATEGORY="Ruby"
-SUMMARY="Ruby cairo bindings"
 DESCRIPTION="Ruby bindings for the cairo graphics rendering library"
-HOMEPAGE="http://cairographics.org/${ORIG_PN}"
-SRC_URI="http://cairographics.org/releases/${ORIG_PN}-${PV}.tar.gz"
+
 PATCH_URI="1.10.0-cygwin.patch"
 
 DEPEND="ruby(pkg-config)"
-
-RDOC_MODULE="Cairo"
