@@ -1,5 +1,10 @@
 inherit rubygem
 
+NAME="ruby-cairo"
+VERSION=1.12.3
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby cairo bindings"
 DESCRIPTION="Ruby bindings for the cairo graphics rendering library"
 
 PATCH_URI="1.10.0-cygwin.patch"
