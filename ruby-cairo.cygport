@@ -1,7 +1,7 @@
 inherit rubygem
 
 NAME="ruby-cairo"
-VERSION=1.12.3
+VERSION=1.12.6
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby cairo bindings"
