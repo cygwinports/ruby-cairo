@@ -1,7 +1,7 @@
 inherit rubygem
 
 NAME="ruby-cairo"
-VERSION=1.12.6
+VERSION=1.12.9
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby cairo bindings"
@@ -10,3 +10,9 @@ DESCRIPTION="Ruby bindings for the cairo graphics rendering library"
 PATCH_URI="1.10.0-cygwin.patch"
 
 DEPEND="ruby(pkg-config)"
+
+PKG_NAMES="${NAME} ${NAME}-devel ${NAME}-doc"
+ruby_cairo_CONTENTS="--exclude=samples ${RUBYGEM_EXTDIR#/} ${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_cairo_devel_REQUIRES="${NAME} libcairo-devel"
+ruby_cairo_devel_CONTENTS="usr/include/ usr/lib/libruby-cairo.a"
+ruby_cairo_doc_CONTENTS="${RUBYGEM_DOCDIR#/} ${RUBYGEM_INSTDIR#/}/samples/"
