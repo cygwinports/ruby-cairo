@@ -1,14 +1,5 @@
 --- origsrc/rcairo-1.10.0/ext/cairo/extconf.rb	2010-09-12 02:21:12.000000000 -0500
 +++ src/rcairo-1.10.0/ext/cairo/extconf.rb	2010-11-01 02:40:27.234550200 -0500
-@@ -29,7 +29,7 @@ major, minor, micro = 1, 2, 0
- base_dir = Pathname(__FILE__).dirname.parent.parent
- checking_for(checking_message("Win32 OS")) do
-   case RUBY_PLATFORM
--  when /cygwin|mingw|mswin32/
-+  when /mingw|mswin32/
-     $defs << "-DRUBY_CAIRO_PLATFORM_WIN32"
-     import_library_name = "libruby-#{module_name}.a"
-     $DLDFLAGS << " -Wl,--out-implib=#{import_library_name}"
 @@ -40,6 +40,11 @@ checking_for(checking_message("Win32 OS"
      PKGConfig.add_path(pkg_config_dir.to_s)
      PKGConfig.set_override_variable("prefix", binary_base_dir.to_s)
