@@ -2,7 +2,7 @@ inherit rubygem
 
 NAME="ruby-cairo"
 VERSION=1.12.9
-RELEASE=1
+RELEASE=2
 CATEGORY="Ruby"
 SUMMARY="Ruby cairo bindings"
 DESCRIPTION="Ruby bindings for the cairo graphics rendering library"
